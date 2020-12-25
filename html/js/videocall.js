@@ -95,7 +95,7 @@ function start() {
 
     const videoSource = videoSelect.value;
     const constraints = {
-        audio: false,
+        audio: true,
         video: { width: {min:1280}, height: {min:720}, deviceId: videoSource ? { exact: videoSource } : undefined}
     };
 
