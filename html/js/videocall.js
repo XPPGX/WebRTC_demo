@@ -186,7 +186,7 @@ btnRegister.onclick = function () {
                 }
                 /////test////////////////////////
                 else{
-                    tdBox.innerHTML = tdBox.innerHTML += "<div class='align_right'>" + msg.from + " : " + msg.body + "</div>";
+                    tdBox.innerHTML = tdBox.innerHTML += "<div class='align_right'>" + msg.from + "   enter the room." + "</div>";
                     if (txtTargetId.value.length == 0) {
                         txtTargetId.value = msg.from;
                     }
