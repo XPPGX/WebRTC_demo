@@ -25,6 +25,8 @@ let peer = null;
 let localConn = null;
 let localStream = null;
 
+let count = 0;
+
 hashCode = function (str) {
     var hash = 0;
     if (str.length == 0) return hash;
@@ -186,10 +188,25 @@ btnRegister.onclick = function () {
                 }
                 /////test////////////////////////
                 else{
-                    tdBox.innerHTML = tdBox.innerHTML += "<div class='align_right'>" + msg.from + "   enter the room." + "</div>";
+                    if(count == 0){
+                        tdBox.innerHTML = tdBox.innerHTML += "<div class='align_right'>" + msg.from + " enter the room " + "</div>";
+                        if (txtTargetId.value.length == 0) {
+                            txtTargetId.value = msg.from;
+                        }
+                        count = 1;
+                    }
+                    else{
+                        tdBox.innerHTML = tdBox.innerHTML += "<div class='align_right'>" + msg.from + " : " + msg.body + "</div>";
+                        if (txtTargetId.value.length == 0) {
+                            txtTargetId.value = msg.from;
+                        }    
+                    }
+                    /*
+                    tdBox.innerHTML = tdBox.innerHTML += "<div class='align_right'>" + msg.from + " : " + msg.body + "</div>";
                     if (txtTargetId.value.length == 0) {
                         txtTargetId.value = msg.from;
                     }
+                    */
                 }
                 ///test///////////////////////////
             });
