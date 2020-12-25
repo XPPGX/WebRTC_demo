@@ -4,7 +4,7 @@
     background-size: cover;
     background-color: #cccccc;
 }
-#btnRegister,#btnCall{
+#btnRegister,#btnCall,#btnSend{
     background-color: #4CAF50;
     border: none;
     color: #fff;
