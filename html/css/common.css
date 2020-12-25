@@ -1,0 +1,61 @@
+ body{
+    /*background-image: url("https://i.imgur.com/llKcFoe.jpg");
+    background-repeat: no-repeat;*/
+    background-size: cover;
+    background-color: #cccccc;
+}
+#btnRegister,#btnCall{
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 16px;
+}
+#btnRegister:hover,#btnCall:hover{
+    color: #003C9D;
+    background-color: #fff;
+    border: #003C9D solid 1px;
+}
+.w60 {
+    width: 100px;
+}
+
+.w120 {
+    width: 120px;
+}
+
+.align_right {
+    text-align: right;
+    background-color: beige;
+    line-height: 150%;
+    padding: 3px
+}
+
+.align_left {
+    text-align: left;
+    line-height: 150%;
+    padding: 3px
+}
+
+.chatMessageBox {
+    height: 200px;
+    overflow-y: scroll;
+    vertical-align: top
+}
+
+video{
+    width:320px;
+    height:240px
+}
+
+#container {
+    position: relative;
+}
+
+#demoCanvas {
+    border: 1px solid #000;
+}
