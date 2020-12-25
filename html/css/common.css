@@ -1,3 +1,7 @@
+ font{
+     font-family: fantasy;
+     font-size: small;
+ }
  body{
     /*background-image: url("https://i.imgur.com/llKcFoe.jpg");
     background-repeat: no-repeat;*/
@@ -15,7 +19,7 @@
     border-radius: 10px;
     font-size: 16px;
 }
-#btnRegister:hover,#btnCall:hover{
+#btnRegister:hover,#btnCall:hover,#btnSend:hover{
     color: #003C9D;
     background-color: #fff;
     border: #003C9D solid 1px;
