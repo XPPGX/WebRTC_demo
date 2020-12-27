@@ -51,7 +51,7 @@
     vertical-align: top
 }
 
-video{
+video,#BGM{
     width:320px;
     height:240px
 }
