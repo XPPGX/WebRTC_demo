@@ -9,8 +9,7 @@ var videoSelect = document.querySelector("select#videoSelect")
 
 /////test////////////////////////////////////////
 var txtMsg = document.querySelector("input#txtMsg");
-var chat = document.querySelector("textarea#chat");
-//var tdBox = document.querySelector("td#tdBox");
+var tdBox = document.querySelector("td#tdBox");
 var btnSend = document.querySelector("button#btnSend");
 /////////////////////////////////////////////////
 
@@ -49,8 +48,7 @@ function gotStream(stream) {
 mess = function (message) {
     localConn.send(JSON.stringify(message));
     console.log(message);
-    chat.innerHTML = chat.innerHTML += "<div class = 'align_left'>" + message.from + ":" + message.body + "</div>";
-    //tdBox.innerHTML = tdBox.innerHTML += "<div class='align_left'>" + message.from + " : " + message.body + "</div>";
+    tdBox.innerHTML = tdBox.innerHTML += "<div class='align_left'>" + message.from + " : " + message.body + "</div>";
 }
 
 //test/////////////////////////////////////////////////////
